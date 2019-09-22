@@ -49,7 +49,7 @@ function isInjected($str) {
 }
 
 // If the user tries to access this script directly, redirect them to the feedback form,
-if (!isset($_REQUEST['email_address'])) {
+if (!isset($_REQUEST['email'])) {
 header( "Location: $feedback_page" );
 }
 
